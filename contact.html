@@ -21,7 +21,7 @@ body{
     left:0;
     z-index: 1000;
     width:95.5%;
-    padding:10px 30px;
+    padding:20px 30px;
     background:#eedbdf;
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
@@ -77,19 +77,205 @@ body{
     background-color: #b36b74;
     color:white;
 }
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  width: 91.5%;
+  padding: 60px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: #c97b84;  
+  margin-bottom: 5px;
+  padding-top: 10px;
+  font-weight: bold;      
+}
+
+.hero p {
+  font-size: 22px;
+ color: #444;
+    margin-bottom: 0px;
+}
+
+.card{
+            background:rgba(252, 249, 249, 0.08);
+            backdrop-filter:blur(12px);
+            border:1px solid rgba(248, 248, 248, 0.15);
+            border-radius:25px;
+            padding:30px;
+            text-align: center;
+        }
+
+        textarea{
+            width:80%;
+            height:260px;
+            border:none;
+            outline:none;
+            resize:none;
+            padding:20px;
+            border-radius:20px;
+            background:rgba(158, 95, 95, 0.35);
+            color:white;
+            font-size:1rem;
+            margin-top:20px;
+        }
+
+        .card h2{
+            color:#c97b84;
+            margin-bottom:20px;
+        }
+        .card button {
+            display:block;
+            background:#c97b84;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:30px;
+            font-size:1rem;
+            margin:20px auto 0;
+            cursor:pointer;
+        }
+
+        .section {
+      padding: 40px 50px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #c97b84;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+    .nav-bar {
+        width: 88%;
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nav-text h1 {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .nav-btn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    .hero {
+        width: 85%;
+        padding: 25px;
+        margin-top: 120px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .card {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    textarea {
+        width: 90%;
+        height: 180px;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .card button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .section {
+        padding: 25px 20px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 15px;
+    }
+}
     </style>
 </head>
 <body>
     <div class="nav-bar">
         <div class="nav-text">
-            <h1>Nos services</h1>
-            <p>
-                Découvrez nos sage-femmes, médecins et notre communauté.
-            </p>
+            <h1>ِContactez-Nous</h1>
         </div>
         <ul class="nav-btn">
             <li><a href="index.html" class="btn">Accueil</a></li>
         </ul>
     </div>  
+
+    <div class="hero">
+        <h2>Nous sommes là pour vous aider</h2>
+        <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter. Notre équipe est disponible pour vous aider et répondre à vos besoins et vous fournir l'assistance nécessaire.
+        <p>Vous pouvez nous joindre par téléphone, par email ou en utilisant le formulaire de contact ci-dessous.</p></p>
+    </div>
+
+    <div class="card">
+
+        <h2>Envoyez-nous un message</h2>
+            <textarea 
+                name="message" id="msg"
+                placeholder="Entrez votre message ici..."
+            ></textarea>
+
+            <button type="submit" id="envoyer">
+                Envoyer
+            </button>
+
+    </div>
+<section class="section">
+    <h2>Contactez-nous</h2>
+    <p>Email: contact@maternitecare.com</p>
+    <p>Téléphone: +213 00 00 00 00</p>
+    <p>Adresse: Ain Témouchent, Algérie</p>
+  </section>
+
+    <script>
+        let envoyerBtn = document.getElementById('envoyer');
+        let inputmsg = document.getElementById('msg');
+        document.getElementById('envoyer').addEventListener('click', function() {
+            if(inputmsg.value.trim() === "") {
+                alert("veuillez entrer un message avant d'envoyer.");
+            }
+            else{
+                alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
+                inputmsg.value = "";
+            }
+        });
+    </script>
 </body>
 </html>
