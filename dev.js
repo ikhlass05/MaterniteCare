@@ -3,9 +3,9 @@ function showDevelopment(){
     let week =
     parseInt(document.getElementById("weekInput").value);
 
-    if(!week || week < 1 || week > 40){
+    if(!week || week < 1 || week > 41){
 
-        alert("Entrez une semaine entre 1 et 40");
+        alert("Entrez une semaine entre 1 et 41");
 
         return;
     }
@@ -13,7 +13,7 @@ function showDevelopment(){
     /* MOVE LIGHT */
 
     let percent =
-    (week / 40) * 100;
+    (week / 41) * 100;
 
     document.getElementById("movingLight")
     .style.left =
