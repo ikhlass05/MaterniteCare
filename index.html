@@ -101,11 +101,181 @@
         </div>
   </section>
 
-  <section class="section">
-    <h2>Les Complications Possibles Pendant La Grossesse </h2>
+  <section class="section complications">
 
+    <h2>Les complications possibles pendant la grossesse</h2>
+
+    <div class="cards">
+
+        <div class="card complication-card">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <h3>Diabète gestationnel</h3>
+            <p>
+                Une augmentation du taux de sucre dans le sang pendant la grossesse.
+            </p>
+        </div>
+
+        <div class="card complication-card">
+            <i class="fa-solid fa-stethoscope"></i>
+            <h3>Hypertension</h3>
+            <p>
+                Une tension artérielle élevée pouvant entraîner des complications.
+            </p>
+        </div>
+
+        <div class="card complication-card">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h3>Hémorragies du premier trimestre</h3>
+            <p>
+                Comme la grossesse extra-utérine ou les saignements précoces.
+            </p>
+        </div>
+
+        <div class="card complication-card">
+            <i class="fa-solid fa-hospital"></i>
+            <h3>Placenta prævia / HRP</h3>
+            <p>
+                Des complications du placenta nécessitant une surveillance médicale.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONSEILS -->
+
+<section class="conseils">
+
+    <h2>Conseils pour une grossesse saine</h2>
+
+    <div class="cards">
+
+        <div class="card conseil-card">
+
+            <i class="fa-solid fa-apple-whole"></i>
+
+            <h3>Alimentation saine</h3>
+
+            <ul>
+                <li>Bien cuire viande, poisson et œufs</li>
+                <li>Éviter les aliments crus à risque</li>
+                <li>Bien laver fruits et légumes</li>
+                <li>Éviter alcool et tabac</li>
+            </ul>
+
+        </div>
+
+        <div class="card conseil-card">
+
+            <i class="fa-solid fa-person-walking"></i>
+
+            <h3>Sports recommandés</h3>
+
+            <ul>
+                <li>Marche</li>
+                <li>Natation</li>
+                <li>Yoga</li>
+                <li>Pilates doux</li>
+                <li>Vélo</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card conseil-card">
+
+            <i class="fa-solid fa-capsules"></i>
+
+            <h3>Vitamines nécessaires</h3>
+
+            <ul>
+                <li>Acide folique</li>
+                <li>Oméga-3</li>
+                <li>Fer</li>
+                <li>Iode</li>
+                <li>Calcium</li>
+                <li>Vitamine D & B12</li>
+            </ul>
+
+        </div>
+
+        <div class="card conseil-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Autres conseils</h3>
+
+            <ul>
+                <li>Hydrater la peau pour limiter les vergetures</li>
+                <li>Attention à la litière des chats</li>
+                <li>Dormir suffisamment</li>
+                <li>Éviter les environnements enfumés</li>
+                <li>Bien se laver les mains avant de cuisiner et manger</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+  <section class="baby-tracker">
+
+    <h2>Développement du bébé</h2>
+
+    <p>
+        Entrez votre semaine de grossesse
+        pour découvrir la taille de votre bébé
+    </p>
+
+    <div class="tracker-input">
+
+        <input type="number"
+               id="weekInput"
+               placeholder="Ex : 20"
+               min="1"
+               max="40">
+
+        <button onclick="showDevelopment()">
+            Continuer
+        </button>
+
+    </div>
+
+    <!-- IMAGE -->
+
+    <div class="timeline-container">
+
+        <img src="dev.png"
+             class="timeline-image">
+
+        <div class="moving-light"
+             id="movingLight">
+        </div>
+
+    </div>
+
+    <!-- RESULT -->
+
+    <div class="result-box"
+         id="resultBox">
+        <h3 id="resultTitle"></h3>
+        <p id="resultText"></p>
+    </div>
+
+</section>
+
+<section class="section">
+    <h2>Contactez-nous</h2>
+    <p>Email: contact@maternitecare.com</p>
+    <p>Téléphone: +213 00 00 00 00</p>
+    <p>Adresse: Ain Témouchent, Algérie</p>
   </section>
 
     <script src="inscription.js"></script>
+    <script src="dev.js"></script>
 </body>
 </html>
