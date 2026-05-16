@@ -423,29 +423,18 @@ max-width: 600px;
     }
 
     /* MODAL */
-    .modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
+    .modal-content{
+        width: 90%;
+        padding: 35px 15px;
+        margin: 25% auto;
+        box-sizing: border-box;
+    }
 
-.modal-content{
-    width: 90%;
-    max-width: 380px;
-    padding: 28px 18px;
-    margin: 0;
-    border-radius: 20px;
-    box-sizing: border-box;
-}
-
-/* inputs */
- input{
-    width: 100%;
-    font-size: 14px;
-    padding: 12px;
-    box-sizing: border-box;
-}
+    input{
+        width: 95%;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
 
     button.ins-btn{
         width: 90%;
