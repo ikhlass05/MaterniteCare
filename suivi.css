@@ -510,49 +510,56 @@ max-width: 600px;
     .nav-bar{
         width: 100%;
         left: 0;
-        padding: 15px 10px;
+        padding: 12px 12px;
         flex-direction: column;
         align-items: center;
+        gap: 10px;
         text-align: center;
-        gap: 15px;
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 25px 25px;
         box-sizing: border-box;
     }
 
+    /* logo + text block */
     .nav-left{
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        align-items: center;
+        gap: 6px;
     }
 
     .nav-logo{
-        width: 70px;
-        height: 70px;
+        width: 55px;
+        height: 55px;
     }
 
     .nav-text h1{
-        font-size: 22px;
+        font-size: 18px;
+        margin: 0;
+        line-height: 1.2;
     }
 
     .nav-text p{
-        font-size: 14px;
+        font-size: 12px;
         margin: 0;
-        line-height: 1.5;
+        line-height: 1.4;
+        max-width: 260px;
     }
 
+    /* buttons */
     .nav-btn{
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
+        margin-top: 5px;
     }
 
     .btn{
         font-size: 13px;
-        padding: 8px 14px;
-        margin: 3px;
+        padding: 8px 16px;
+        margin: 0;
     }
 
-    /* DROPDOWN */
+    /* dropdown */
     .dropdown-content{
         left: 50%;
         transform: translateX(-50%);
