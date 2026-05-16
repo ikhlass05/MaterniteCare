@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Contact</title>
-    <style>
+    <title>Sage-Femme</title>
+
+<style>
     
 * {
   font-family: Arial, sans-serif;
@@ -90,94 +91,88 @@ body{
     color:white;
 }
 
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    width: 93.5%;
-    padding-top: 120px;
-    padding-right: 100px;
-    background: #afc3c1;
-    padding-bottom: 20px;
-    }
-
-
-
-.hero-text{
-  width: 50%;
-  text-align: center;
-
-  padding: 20px;
-}
-.hero-text h2 {
-  font-size: 35px;
-
-  color: #9f5e65;  
-  line-height: 1.2;
-  margin-bottom: 25px;
-  font-weight: bold;      
-}
-
-.hero-text p {
-  font-size: 20px;
-  line-height: 1.5;
- color: #444;
-max-width: 1000px;
-}
-
-.card{
-            background:rgba(252, 249, 249, 0.08);
-            backdrop-filter:blur(12px);
-            border:1px solid rgba(248, 248, 248, 0.15);
-            border-radius:25px;
-            padding:30px;
-            text-align: center;
-        }
-
-        textarea{
-            width:80%;
-            height:260px;
-            border:none;
-            outline:none;
-            resize:none;
-            padding:20px;
-            border-radius:20px;
-            background:rgb(220, 217, 217);
-            color:#444;
-            font-size:1rem;
-            margin-top:20px;
-        }
-
-        .card h2{
-            color:#7e222e;
-            margin-bottom:20px;
-        }
-        .card button {
-            display:block;
-            background:#ad747b;
-            color:white;
-            border:none;
-            padding:12px 25px;
-            border-radius:30px;
-            font-size:1rem;
-            margin:20px auto 0;
-            cursor:pointer;
-        }
-
-        .section {
-      padding: 40px 50px;
+.section {
+      padding: 70px 50px;
       text-align: center;
+
     }
 
     .section h2 {
       color: #7e222e;
       margin-bottom: 20px;
+      margin-top: 100px;
       font-size: 32px;
     }
 
-    .dropdown{
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.card {
+  position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    padding-left: 10px;
+
+}
+
+.pfp {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.pfp:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    background: rgb(216, 209, 209);
+    padding: 20px;
+    border-radius: 18px;
+    width: 300px;
+    transition: 0.4s;
+
+}
+
+
+.info h3 {
+    color: #c97b84;
+    margin-bottom: 15px;
+}
+
+.info p {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.info a {
+    text-decoration: none;
+    background: #ad747b;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 12px;
+}
+
+section{
+    padding: 40px 50px;
+    text-align: center;
+}
+section h2{
+    font-size: 48px;
+    color: #7e222e;
+    margin-bottom: 20px;
+}
+
+.dropdown{
     position:relative;
 }
 
@@ -228,8 +223,6 @@ max-width: 1000px;
     display:flex;
 }
 
-  /* ================= MOBILE VERSION ================= */
-
 @media screen and (max-width: 768px) {
 
     /* NAVBAR */
@@ -238,7 +231,6 @@ max-width: 1000px;
         left: 0;
         padding: 15px 10px;
         flex-direction: column;
-        align-items: center;
         text-align: center;
         gap: 15px;
         border-radius: 0 0 20px 20px;
@@ -257,7 +249,6 @@ max-width: 1000px;
 
     .nav-text h1{
         font-size: 22px;
-        padding-top: 5px;
     }
 
     .nav-text p{
@@ -278,57 +269,6 @@ max-width: 1000px;
         margin: 3px;
     }
 
-    /* HERO */
-    .hero{
-        width: 100%;
-        flex-direction: column;
-        padding: 180px 15px 40px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .hero-text{
-        width: 100%;
-        padding: 10px;
-    }
-
-    .hero-text h2{
-        font-size: 28px;
-        line-height: 1.3;
-    }
-
-    .hero-text p{
-        font-size: 16px;
-        line-height: 1.6;
-        max-width: 100%;
-    }
-
-    /* CARD */
-    .card{
-        padding: 20px 15px;
-        margin-top: 20px;
-        border-radius: 20px;
-    }
-
-    .card h2{
-        font-size: 24px;
-    }
-
-    textarea{
-        width: 100%;
-        height: 180px;
-        font-size: 14px;
-        padding: 15px;
-        box-sizing: border-box;
-    }
-
-    .card button{
-        font-size: 14px;
-        padding: 10px 20px;
-        width: 100%;
-        max-width: 220px;
-    }
-
     /* SECTION */
     .section{
         padding: 30px 15px;
@@ -336,11 +276,61 @@ max-width: 1000px;
 
     .section h2{
         font-size: 28px;
+        margin-top: 170px;
+        margin-bottom: 25px;
     }
 
-    .section p{
+    section{
+        padding: 30px 15px;
+    }
+
+    section h2{
+        font-size: 30px;
+    }
+
+    section p{
         font-size: 15px;
         line-height: 1.6;
+    }
+
+    /* DOCTORS GRID */
+    .doctors-grid{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .card{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+        gap: 18px;
+    }
+
+    .pfp{
+        width: 130px;
+        height: 130px;
+    }
+
+    .info{
+        width: 100%;
+        max-width: 320px;
+        padding: 18px;
+        box-sizing: border-box;
+    }
+
+    .info h3{
+        font-size: 20px;
+    }
+
+    .info p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .info a{
+        display: inline-block;
+        font-size: 14px;
+        padding: 8px 14px;
     }
 
     /* DROPDOWN */
@@ -349,10 +339,12 @@ max-width: 1000px;
         transform: translateX(-50%);
     }
 }
-    </style>
+</style>
+    
 </head>
 <body>
-    <div class="nav-bar"><div class="nav-left">
+    <div class="nav-bar">
+        <div class="nav-left">
         <img src="logo.png" alt="logo" class="nav-logo">
         <div class="nav-text">
             <h1>MaternitéCare</h1>
@@ -372,48 +364,57 @@ max-width: 1000px;
             <a href="communaute.html">Communauté</a>
         </div>
     </li>
+            <li><a href="contact.html" class="btn">Contact</a></li>
         </ul>
-    </div>  
+    </div> 
 
-<section class="hero">
-        <div class="hero-text">
-        <h2>Nous sommes là pour vous aider</h2>
-        <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter. Notre équipe est disponible pour vous aider et répondre à vos besoins et vous fournir l'assistance nécessaire.
-        <p>Vous pouvez nous joindre par téléphone, par email ou en utilisant le formulaire de contact ci-dessous.</p></p>
-    </div>
-</section>
-    <div class="card">
-
-        <h2>Envoyez-nous un message</h2>
-            <textarea 
-                name="message" id="msg"
-                placeholder="Entrez votre message ici..."
-            ></textarea>
-
-            <button type="submit" id="envoyer">
-                Envoyer
-            </button>
-
-    </div>
 <section class="section">
+        <h2>Nos Sage-femmes</h2>
+        <div class="doctors-grid">
+        <div class="card">
+        <img src="sf_ns_merdji.jpg"class="pfp">
+        <div class="info">
+          <h3>Sage-femme Nesrine Merdji</h3>
+          <p>Compte Animé par une Sage-Femme</p>
+          <a href="https://www.instagram.com/sf_nesrine_merdji?igsh=MTFnZ3R1a3Byam4yaQ==">Voir le profil</a>
+        </div>
+        </div>
+
+        <div class="card">
+        <img src="sf_samah.jpg"class="pfp">
+        <div class="info">
+          <h3>Sage-femme Samah</h3>
+          <p> Sage-Femme</p>
+          <a href="https://www.tiktok.com/@sambensf?_r=1&_t=ZS-963YPvbZBlR">Voir le profil</a>
+        </div>
+      </div>
+
+      <div class="card">
+         <img src="sf-melek.jpg"class="pfp">
+        <div class="info">
+          <h3>Sage-femme Melek</h3>
+          <p> Compte Géré par un Etudiante Sage-Femme</p>
+          <a href="https://www.instagram.com/midwife_melek?igsh=YmpmZWQzZ3lsdGo3">Voir le profil</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ma_sagefemme_alg.jpg"class="pfp">
+        <div class="info">
+          <h3>Ma Sagefemme Algérienne</h3>
+          <p>Page Educative Tenue par une Algerienne</p>
+          <a href="https://www.instagram.com/masagefemmealgerienne/">Voir le profil</a>
+        </div>
+      </div>
+        </div>
+    </section>
+
+    <section>
     <h2>Contactez-nous</h2>
     <p>Email: contact@maternitecare.com</p>
     <p>Téléphone: +213 00 00 00 00</p>
     <p>Adresse: Ain Témouchent, Algérie</p>
-  </section>
+</section>
 
-    <script>
-        let envoyerBtn = document.getElementById('envoyer');
-        let inputmsg = document.getElementById('msg');
-        document.getElementById('envoyer').addEventListener('click', function() {
-            if(inputmsg.value.trim() === "") {
-                alert("veuillez entrer un message avant d'envoyer.");
-            }
-            else{
-                alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
-                inputmsg.value = "";
-            }
-        });
-    </script>
 </body>
 </html>
