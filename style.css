@@ -440,7 +440,7 @@ max-width: 600px;
 }
 
 /* inputs */
-.modal-content input{
+ input{
     width: 100%;
     font-size: 14px;
     padding: 12px;
