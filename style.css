@@ -425,14 +425,16 @@ max-width: 600px;
     /* MODAL */
     .modal-content{
         width: 90%;
-        padding: 35px 15px;
-        margin: 25% auto;
+        max-width: 360px;
+        padding: 28px 18px;
+        margin: 15% auto; /* smaller than 25% */
         box-sizing: border-box;
     }
 
-    input{
-        width: 95%;
+    .modal-content input{
+        width: 100%;
         font-size: 14px;
+        padding: 12px;
         box-sizing: border-box;
     }
 
