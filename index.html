@@ -19,11 +19,11 @@
         </div>
         <ul class="nav-btn">
             <li class="dropdown">
-        <a class="btn dropbtn" >
+        <button class="btn dropbtn" onclick="toggleMenu()">
             Nos Services <i class="fa-solid fa-caret-down"></i>
-        </a>
+        </button>
 
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="servicesMenu">
             <a href="sf.html">Sage-Femme</a>
             <a href="gyneco.html">Gynécologue</a>
             <a href="communaute.html">Communauté</a>
@@ -146,5 +146,16 @@
   </section>
 
     <script src="inscription.js"></script>
+    <script>
+function toggleMenu() {
+    const menu = document.getElementById("servicesMenu");
+
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+    </script>
 </body>
 </html>

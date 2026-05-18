@@ -217,12 +217,6 @@ section h2{
     padding-left:30px;
 }
 
-/* SHOW MENU */
-
-.dropdown:hover .dropdown-content{
-    display:flex;
-}
-
 @media screen and (max-width: 768px) {
 
     /* NAVBAR */
@@ -362,11 +356,11 @@ section h2{
         <ul class="nav-btn">
             <li><a href="index.html" class="btn">Accueil</a></li>
             <li class="dropdown">
-        <a class="btn dropbtn" >
+        <button class="btn dropbtn" onclick="toggleMenu()">
             Nos Services <i class="fa-solid fa-caret-down"></i>
-        </a>
+        </button>
 
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="servicesMenu">
             <a href="sf.html">Sage-Femme</a>
             <a href="gyneco.html">Gynécologue</a>
             <a href="communaute.html">Communauté</a>
@@ -424,5 +418,15 @@ section h2{
     <p>Adresse: Ain Témouchent, Algérie</p>
 </section>
 
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("servicesMenu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script>
 </body>
 </html>

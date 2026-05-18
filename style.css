@@ -126,12 +126,6 @@ body{
     padding-left:30px;
 }
 
-/* SHOW MENU */
-
-.dropdown:hover .dropdown-content{
-    display:flex;
-}
-
 .modal {
   display: none;
   position: fixed;
