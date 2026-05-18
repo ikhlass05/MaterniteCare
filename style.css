@@ -13,7 +13,7 @@ body{
   left:0;
   width:93.5%;
   padding:20px 50px;
-  background:#504d4d;
+  background:#4FA7A7;
   border-bottom-left-radius:20px;
   border-bottom-right-radius:20px;
   display:flex;
@@ -38,7 +38,7 @@ body{
     flex-direction:column;
 }
 .nav-text h1{
-    color:#c7868e;
+    color:#82464d;
     font-size:26px;
     margin:0;
 }
