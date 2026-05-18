@@ -15,7 +15,7 @@
 }
 
 body{
-  background:rgb(147, 144, 144);
+  background:#afc3c1;
 }
 
 .nav-bar{
@@ -92,6 +92,48 @@ body{
     color:white;
 }
 
+.dropdown{
+    position:relative;
+}
+
+.dropbtn{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+/* MENU */
+.dropdown-content{
+    position:absolute;
+    top:52px;
+    left:0;
+
+    background:#4FA7A7;
+    min-width:150px;
+
+    border-top:2px solid #afc3c1;
+
+    display:none;
+    flex-direction:column;
+
+    padding:15px 0;
+
+    z-index:1000;
+}
+
+/* LINKS INSIDE */
+.dropdown-content a{
+    color:#82464d;
+    padding:8px 20px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.dropdown-content a:hover{
+    color:#6e353b;
+    padding-left:30px;
+}
+
 .section {
       padding: 70px 50px;
       text-align: center;
@@ -99,7 +141,7 @@ body{
     }
 
     .section h2 {
-      color: #7e222e;
+      color: #9f5e65;
       margin-bottom: 20px;
       margin-top: 100px;
       font-size: 32px;
@@ -167,53 +209,8 @@ section{
 }
 section h2{
     font-size: 48px;
-    color: #7e222e;
+    color: #9f5e65;
     margin-bottom: 20px;
-}
-
-.dropdown{
-    position:relative;
-}
-
-.dropbtn{
-    display:flex;
-    align-items:center;
-    gap:5px;
-}
-
-/* MENU */
-
-.dropdown-content{
-    position:absolute;
-    top:52px;
-    left:0;
-
-    background:#4FA7A7;
-    min-width:150px;
-
-    border-top:2px solid #afc3c1;
-
-    display:none;
-    flex-direction:column;
-
-    padding:15px 0;
-
-    z-index:1000;
-}
-
-/* LINKS INSIDE */
-
-.dropdown-content a{
-    color:#82464d;
-    padding:8px 20px;
-    text-decoration:none;
-    font-size:14px;
-    transition:0.3s;
-}
-
-.dropdown-content a:hover{
-    color:#6e353b;
-    padding-left:30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -370,7 +367,7 @@ section h2{
     </div> 
 
     <section class="section">
-        <h2>Nos gynecologues</h2>
+        <h2>Nos gynécologues</h2>
         <div class="doctors-grid">
           <div class="card">
           <img src="dr_zerrouki.jpeg"class="pfp">

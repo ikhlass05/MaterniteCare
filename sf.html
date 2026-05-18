@@ -14,7 +14,7 @@
 }
 
 body{
-  background:rgb(147, 144, 144);
+  background:#afc3c1;
 }
 
 .nav-bar{
@@ -23,7 +23,7 @@ body{
   left:0;
   width:93.5%;
   padding:20px 50px;
-  background:#504d4d;
+  background:#4FA7A7;
   border-bottom-left-radius:20px;
   border-bottom-right-radius:20px;
   display:flex;
@@ -48,7 +48,7 @@ body{
     flex-direction:column;
 }
 .nav-text h1{
-    color:#c7868e;
+    color:#82464d;
     font-size:26px;
     margin:0;
 }
@@ -91,6 +91,48 @@ body{
     color:white;
 }
 
+.dropdown{
+    position:relative;
+}
+
+.dropbtn{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+/* MENU */
+.dropdown-content{
+    position:absolute;
+    top:52px;
+    left:0;
+
+    background:#4FA7A7;
+    min-width:150px;
+
+    border-top:2px solid #afc3c1;
+
+    display:none;
+    flex-direction:column;
+
+    padding:15px 0;
+
+    z-index:1000;
+}
+
+/* LINKS INSIDE */
+.dropdown-content a{
+    color:#82464d;
+    padding:8px 20px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.dropdown-content a:hover{
+    color:#6e353b;
+    padding-left:30px;
+}
+
 .section {
       padding: 70px 50px;
       text-align: center;
@@ -98,7 +140,7 @@ body{
     }
 
     .section h2 {
-      color: #7e222e;
+      color: #9f5e65;
       margin-bottom: 20px;
       margin-top: 100px;
       font-size: 32px;
@@ -140,9 +182,7 @@ body{
     border-radius: 18px;
     width: 300px;
     transition: 0.4s;
-
 }
-
 
 .info h3 {
     color: #c97b84;
@@ -168,53 +208,8 @@ section{
 }
 section h2{
     font-size: 48px;
-    color: #7e222e;
+    color: #9f5e65;
     margin-bottom: 20px;
-}
-
-.dropdown{
-    position:relative;
-}
-
-.dropbtn{
-    display:flex;
-    align-items:center;
-    gap:5px;
-}
-
-/* MENU */
-
-.dropdown-content{
-    position:absolute;
-    top:52px;
-    left:0;
-
-    background:#504d4d;
-    min-width:150px;
-
-    border-top:2px solid #afc3c1;
-
-    display:none;
-    flex-direction:column;
-
-    padding:15px 0;
-
-    z-index:1000;
-}
-
-/* LINKS INSIDE */
-
-.dropdown-content a{
-    color:#c7868e;
-    padding:8px 20px;
-    text-decoration:none;
-    font-size:14px;
-    transition:0.3s;
-}
-
-.dropdown-content a:hover{
-    color:#a94b56;
-    padding-left:30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -350,7 +345,7 @@ section h2{
         <img src="logo.png" alt="logo" class="nav-logo">
         <div class="nav-text">
             <h1>MaternitéCare</h1>
-            <p>Un site créer de la part de l'étudiante sage femme Benchama Abir</p>
+            <p>Un site créé de la part de l'étudiante sage femme Benchama Abir</p>
         </div>
         </div>
         <ul class="nav-btn">
